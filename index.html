@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adiel Sanga · Ingénieur logiciel et DevOps</title>
+<meta name="description" content="Adiel Sanga, ingénieur logiciel et DevOps à Marseille : applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:title" content="Adiel Sanga · Ingénieur logiciel et DevOps">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/videos/ep59.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">A<span>S</span></a>
+  <nav>
+    <a href="#projets">Side projects</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact" class="btn small">Me contacter</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- 1. Accueil -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">Salut, moi c'est</p>
+      <h1>Adiel Sanga</h1>
+      <p class="role">Ingénieur logiciel<br><span>&amp; DevOps</span></p>
+      <p class="lead">Ingénieur diplômé (CTI, Bac+5), basé à Marseille. Depuis 3 ans, je conçois et développe des applications web, mobiles et des API, et j'industrialise leur livraison : CI/CD, conteneurs, cloud AWS et supervision. Des mises en production fiables, de bout en bout.</p>
+      <ul class="stats"><li><b>3 ans</b> d'expérience</li><li><b>Bac+5</b> ingénieur CTI</li><li><b>TOEIC</b> 865</li></ul>
+      <div class="cta">
+        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#contact" class="btn ghost">Travaillons ensemble</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 460" class="bonhomme">
+        <ellipse cx="200" cy="440" rx="120" ry="16" fill="rgba(0,0,0,.18)"/>
+        <g class="corps">
+          <path d="M150 300 Q200 280 250 300 L262 420 Q200 432 138 420 Z" fill="#e2503c" stroke="#1b1422" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M150 312 Q110 330 92 270" fill="none" stroke="#1b1422" stroke-width="30" stroke-linecap="round"/>
+          <path d="M150 312 Q110 330 92 270" fill="none" stroke="#e2503c" stroke-width="16" stroke-linecap="round"/>
+          <g class="bras"><path d="M250 312 Q300 300 318 240" fill="none" stroke="#1b1422" stroke-width="30" stroke-linecap="round"/><path d="M250 312 Q300 300 318 240" fill="none" stroke="#e2503c" stroke-width="16" stroke-linecap="round"/><circle cx="320" cy="232" r="18" fill="#9a6440" stroke="#1b1422" stroke-width="7"/></g>
+          <circle cx="90" cy="262" r="18" fill="#9a6440" stroke="#1b1422" stroke-width="7"/>
+          <g class="tete">
+            <path d="M200 90 Q275 92 282 180 Q285 262 200 268 Q115 262 118 180 Q125 92 200 90 Z" fill="#9a6440" stroke="#1b1422" stroke-width="8"/>
+            <g fill="#22161a" stroke="#1b1422" stroke-width="5">
+              <circle cx="140" cy="118" r="30"/><circle cx="180" cy="92" r="32"/><circle cx="222" cy="90" r="32"/><circle cx="262" cy="116" r="30"/><circle cx="120" cy="150" r="24"/><circle cx="282" cy="150" r="24"/>
+            </g>
+            <g class="yeux"><ellipse cx="170" cy="182" rx="24" ry="30" fill="#fff" stroke="#1b1422" stroke-width="6"/><ellipse cx="232" cy="182" rx="24" ry="30" fill="#fff" stroke="#1b1422" stroke-width="6"/><circle cx="176" cy="186" r="9" fill="#1b1422"/><circle cx="238" cy="186" r="9" fill="#1b1422"/></g>
+            <path d="M168 228 Q200 256 234 228" fill="#7a1f2a" stroke="#1b1422" stroke-width="7" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </svg>
+      <span class="bulle">Bienvenue !</span>
+    </div>
+  </section>
+
+  <!-- 2. Projets -->
+  <section id="projets" class="section">
+    <h2><span>Side</span> projects</h2>
+    <div class="featured">
+      <article class="card big c-blue">
+        <div class="card-head"><span class="emoji-dot">G</span><h3>GoWithMe</h3></div>
+        <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
+        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
+        <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
+        <div class="links"><a href="https://github.com/GoWithMe-App/gowithme" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+      </article>
+      <article class="card big c-teal">
+        <div class="card-head"><span class="emoji-dot">S</span><h3>SplitEase</h3></div>
+        <p>Une application installable (PWA) pour partager les dépenses entre amis, en voyage ou en colocation.</p>
+        <ul class="points"><li>Simplification des dettes par graphe : le moins de remboursements possible</li><li>Authentification, base PostgreSQL et synchronisation en temps réel avec Supabase</li><li>Mode hors ligne, export CSV, partage de groupe par lien</li><li>Mobile first, thème clair ou sombre, accessibilité WCAG AA</li></ul>
+        <ul class="chips"><li>React 18</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>PWA</li></ul>
+        <div class="links"><a href="https://github.com/adiel-sml/SplitEaseV2" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+      </article>
+    </div>
+    <h3 class="autres">Autres projets</h3>
+    <div class="grid three">
+      <article class="card c-green">
+        <div class="card-head"><span class="emoji-dot">L</span><h3>Lab DevOps</h3></div>
+        <p>Mon laboratoire personnel : un cluster Kubernetes k3s provisionné avec Terraform et Ansible, des déploiements GitOps avec Helm et Argo CD, et des pipelines GitLab CI/CD. C'est là que je teste avant de mettre en production.</p>
+        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>k3s</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
+      </article>
+      <article class="card c-pink">
+        <div class="card-head"><span class="emoji-dot">Ç</span><h3>Ça joue</h3></div>
+        <p>Vingt-trois jeux de soirée sur un seul téléphone qu'on se passe : Mimes, Time's Up, Undercover, Loup-garou avec meneur vocal, Quiz de 2 250 questions, jeux pour les couples. Gratuit, sans compte, sans pub, utilisable hors ligne.</p>
+        <ul class="chips"><li>JavaScript</li><li>Vite</li><li>PWA</li><li>Capacitor</li></ul>
+        <div class="links"><a href="https://github.com/adiel-sml/ca-joue" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+      </article>
+      <article class="card c-yellow">
+        <div class="card-head"><span class="emoji-dot">D</span><h3>Doodle Video</h3></div>
+        <p>Un pipeline de production vidéo automatisé : moteur d'animation 2D en canvas, voix off synthétisée et alignée mot à mot, rendu headless, contrôles qualité automatiques (zones sûres, plans figés, transcription de la voix) et export multi formats. Un épisode par jour sur TikTok.</p>
+        <ul class="chips"><li>JavaScript</li><li>Python</li><li>Playwright</li><li>FFmpeg</li><li>Whisper</li></ul>
+        <div class="links"><a href="#videos" class="btn small">Voir des rendus</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Parcours -->
+  <section id="parcours" class="section">
+    <h2><span>Mon</span> parcours</h2>
+    <ol class="timeline">
+      <li class="t-yellow"><span class="date">Depuis 05/2026</span><h3>Ingénieur logiciel et DevOps <em>Dooke Consulting, Paris (hybride)</em></h3>
+        <p>Applications web, mobiles et API REST pour des clients en France et en Afrique, de l'analyse du besoin à la mise en production. Chaînes CI/CD (GitHub Actions, GitLab CI), conteneurs Docker sur Linux et AWS, supervision Prometheus et Grafana, migrations et refactoring.</p></li>
+      <li class="t-teal"><span class="date">09/2025 à 04/2026</span><h3>Développeur fullstack et mobile <em>Optimum Tracker, Meyreuil</em></h3>
+        <p>Applis mobiles React Native TCU Control et AgriTrack (supervision de centrales agrivoltaïques), builds automatisés avec Appcircle et Codemagic, API Node.js avec un temps de réponse P95 sous 500 ms, services conteneurisés derrière Nginx.</p></li>
+      <li class="t-pink"><span class="date">04/2024 à 09/2025</span><h3>Développeur fullstack, stage puis alternance <em>Optimum Tracker, Meyreuil</em></h3>
+        <p>Conception de la GMAO interne (React, Node.js, MySQL) et intégration continue avec tests Jest et E2E.</p>
+        <ul class="wins"><li><b>50 %</b> d'anomalies détectées avant la production</li><li><b>−40 %</b> d'incidents</li><li><b>−60 %</b> de temps de traitement des interventions</li></ul></li>
+      <li class="t-blue"><span class="date">2022 à 2025</span><h3>Diplôme d'ingénieur informatique (CTI) <em>3iL Ingénieurs, Limoges</em></h3><p>Après une classe préparatoire MPSI à l'IUC de Douala, au Cameroun (2020 à 2022).</p></li>
+    </ol>
+  </section>
+
+  <!-- 4. Compétences -->
+  <section id="competences" class="section">
+    <h2><span>Ce que</span> je sais faire</h2>
+    <div class="skills">
+      <div class="skill s4"><h3>CI/CD</h3><p>GitHub Actions, GitLab CI, Codemagic, Appcircle : build, tests, qualité et déploiement multi environnements.</p></div>
+      <div class="skill s5"><h3>Conteneurs et cloud</h3><p>Docker, Docker Compose, Kubernetes k3s, Helm, Argo CD, AWS (EC2, S3, IAM), Nginx, SSL/TLS, Linux.</p></div>
+      <div class="skill s6"><h3>Infra et supervision</h3><p>Terraform, Ansible, Prometheus, Grafana, alerting, ELK, Bash et Python, runbooks.</p></div>
+      <div class="skill s3"><h3>Back-end</h3><p>Node.js, NestJS, Express, Symfony, API REST, WebSocket, JWT, PostgreSQL, MySQL, Supabase, Stripe.</p></div>
+      <div class="skill s1"><h3>Front</h3><p>React, TypeScript, JavaScript, Redux, Tailwind, applications installables hors ligne.</p></div>
+      <div class="skill s2"><h3>Mobile et qualité</h3><p>React Native, Expo, publication sur les stores, tests Jest et E2E, revues de code, Git flow, Agile Scrum.</p></div>
+    </div>
+  </section>
+
+  <!-- 3. Vidéos -->
+  <section id="videos" class="section dark">
+    <h2><span>Doodle Video</span> en images</h2>
+    <p class="sub">Trois rendus produits par mon pipeline vidéo automatisé, du script au mp4 publié, sans montage à la main.</p>
+    <div class="videos">
+      <figure><video src="assets/videos/ep59.mp4" poster="assets/videos/ep59.jpg" controls preload="none" playsinline></video><figcaption>Vendredi 13 <small>comédie</small></figcaption></figure>
+      <figure><video src="assets/videos/ep60.mp4" poster="assets/videos/ep60.jpg" controls preload="none" playsinline></video><figcaption>Le 19 novembre <small>comédie</small></figcaption></figure>
+      <figure><video src="assets/videos/ep58.mp4" poster="assets/videos/ep58.jpg" controls preload="none" playsinline></video><figcaption>Tu l'as vu ? <small>énigme</small></figcaption></figure>
+    </div>
+      </section>
+
+  <!-- 5. Contact -->
+  <section id="contact" class="section contact">
+    <h2><span>On</span> discute ?</h2>
+    <p class="sub">Un poste, une mission, un projet d'application ou d'industrialisation : écris-moi. Mobilité France entière.</p>
+    <div class="cta center">
+      <a href="mailto:leolinsanga@gmail.com" class="btn">leolinsanga@gmail.com</a>
+      <a href="https://github.com/adiel-sml" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/adiel-sanga" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="annee">2026</span> Adiel Sanga · Fait main, avec beaucoup de traits noirs</footer>
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>
