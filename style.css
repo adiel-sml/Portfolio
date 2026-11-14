@@ -89,6 +89,7 @@ footer { text-align: center; padding: 26px 16px; border-top: 4px solid var(--ink
 
 /* téléphone et tablette */
 @media (max-width: 900px) {
+  .photo { max-width: 260px; }
   .hero { grid-template-columns: 1fr; text-align: center; }
   .hero .cta { justify-content: center; } .lead { margin: 0 auto; }
   .hero-art { order: -1; max-width: 300px; margin: 0 auto; }
@@ -125,7 +126,8 @@ footer { text-align: center; padding: 26px 16px; border-top: 4px solid var(--ink
 .wins { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 10px 0 0; }
 .wins li { background: var(--yellow); border: 3px solid var(--ink); border-radius: 12px; padding: 2px 10px; font-weight: 700; font-size: 15px; }
 .wins b { font-family: "Titan One"; font-weight: 400; }
-@media (max-width: 900px) { .skills { grid-template-columns: repeat(2, 1fr); } .grid .card:last-child:nth-child(odd) { grid-column: auto; } }
+@media (max-width: 900px) {
+  .photo { max-width: 260px; } .skills { grid-template-columns: repeat(2, 1fr); } .grid .card:last-child:nth-child(odd) { grid-column: auto; } }
 @media (max-width: 560px) { .skills { grid-template-columns: 1fr; } .hero .stats { justify-content: center; } }
 /* side projects en vedette */
 .featured { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
@@ -138,7 +140,8 @@ footer { text-align: center; padding: 26px 16px; border-top: 4px solid var(--ink
 .grid.three { grid-template-columns: repeat(3, 1fr); }
 .grid.three .card { padding: 22px; } .grid.three .card h3 { font-size: 24px; }
 .grid.three .card:last-child:nth-child(odd) { grid-column: auto; }
-@media (max-width: 900px) { .featured, .grid.three { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .photo { max-width: 260px; } .featured, .grid.three { grid-template-columns: 1fr; } }
 /* étiquettes et coordonnées de l'accueil */
 .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 14px 0 0; }
 .tags li { background: var(--ink); color: var(--paper); border-radius: 999px; padding: 2px 14px; font-weight: 800; font-size: 15px; }
@@ -162,3 +165,6 @@ footer { text-align: center; padding: 26px 16px; border-top: 4px solid var(--ink
 .csbr .wins { margin: 2px 0 0; }
 #formation .card h3 { font-size: 24px; margin: 10px 0 6px; } #formation .card p { margin: 0; }
 @media (max-width: 760px) { .csbr { grid-template-columns: 1fr; } .xp { padding: 20px; } .hero .tags, .hero .coords { justify-content: center; } }
+/* photo de profil */
+.photo { width: 100%; height: auto; max-width: 380px; aspect-ratio: 1 / 1; object-fit: cover; margin: 0 auto; display: block; border-radius: 50%; border: 7px solid var(--ink); box-shadow: 10px 10px 0 var(--yellow), 10px 10px 0 4px var(--ink); background: #e2e8f0; }
+.hero-art .bulle { top: 2%; right: 4%; }
