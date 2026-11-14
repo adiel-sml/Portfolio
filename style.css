@@ -139,3 +139,26 @@ footer { text-align: center; padding: 26px 16px; border-top: 4px solid var(--ink
 .grid.three .card { padding: 22px; } .grid.three .card h3 { font-size: 24px; }
 .grid.three .card:last-child:nth-child(odd) { grid-column: auto; }
 @media (max-width: 900px) { .featured, .grid.three { grid-template-columns: 1fr; } }
+/* étiquettes et coordonnées de l'accueil */
+.tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 14px 0 0; }
+.tags li { background: var(--ink); color: var(--paper); border-radius: 999px; padding: 2px 14px; font-weight: 800; font-size: 15px; }
+.coords { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 14px 0 0; font-weight: 700; }
+.coords a { text-decoration: underline; text-decoration-thickness: 3px; text-decoration-color: var(--yellow); text-underline-offset: 4px; }
+/* profil */
+.profil { max-width: 860px; margin: 0 auto; background: var(--paper); border: 5px solid var(--ink); border-left-width: 16px; border-left-color: var(--red); border-radius: var(--r); padding: 26px 30px; box-shadow: var(--shadow); font-size: 19px; }
+.profil p { margin: 0 0 14px; } .profil p:last-child { margin: 0; }
+/* expériences : contexte, besoin, solution, résultat */
+.xp-list { display: grid; gap: 30px; max-width: 980px; margin: 0 auto; }
+.xp { background: var(--paper); border: 5px solid var(--ink); border-radius: var(--r); padding: 24px 28px; box-shadow: var(--shadow); border-top-width: 14px; }
+.xp.t-yellow { border-top-color: var(--yellow); } .xp.t-teal { border-top-color: var(--teal); } .xp.t-pink { border-top-color: var(--pink); }
+.date { display: inline-block; background: var(--ink); color: var(--paper); border-radius: 999px; padding: 0 12px; font-weight: 800; font-size: 15px; }
+.xp h3 { font-size: 26px; margin: 8px 0 14px; }
+.xp h3 em { display: block; font: 800 17px "Baloo 2"; font-style: normal; color: var(--red); }
+.csbr { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 0; }
+.csbr > div { border: 3px solid var(--ink); border-radius: 16px; padding: 12px 16px; background: var(--bg); }
+.csbr dt { display: inline-block; font: 400 18px "Titan One"; border: 3px solid var(--ink); border-radius: 10px; padding: 0 10px; margin-bottom: 6px; box-shadow: 2px 2px 0 var(--ink); }
+.csbr > div:nth-child(1) dt { background: var(--blue); } .csbr > div:nth-child(2) dt { background: var(--pink); } .csbr > div:nth-child(3) dt { background: var(--yellow); } .csbr > div:nth-child(4) dt { background: #7ddc6f; }
+.csbr dd { margin: 0; }
+.csbr .wins { margin: 2px 0 0; }
+#formation .card h3 { font-size: 24px; margin: 10px 0 6px; } #formation .card p { margin: 0; }
+@media (max-width: 760px) { .csbr { grid-template-columns: 1fr; } .xp { padding: 20px; } .hero .tags, .hero .coords { justify-content: center; } }

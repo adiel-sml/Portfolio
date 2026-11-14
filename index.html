@@ -18,8 +18,9 @@
 <header class="nav">
   <a class="logo" href="#top">A<span>S</span></a>
   <nav>
+    <a href="#profil">Profil</a>
+    <a href="#experiences">Expériences</a>
     <a href="#projets">Side projects</a>
-    <a href="#parcours">Parcours</a>
     <a href="#competences">Compétences</a>
     <a href="#contact" class="btn small">Me contacter</a>
   </nav>
@@ -32,10 +33,12 @@
       <p class="tag">Salut, moi c'est</p>
       <h1>Adiel Sanga</h1>
       <p class="role">Ingénieur logiciel<br><span>&amp; DevOps</span></p>
-      <p class="lead">Ingénieur diplômé (CTI, Bac+5), basé à Marseille. Depuis 3 ans, je conçois et développe des applications web, mobiles et des API, et j'industrialise leur livraison : CI/CD, conteneurs, cloud AWS et supervision. Des mises en production fiables, de bout en bout.</p>
+      <p class="lead">Je conçois des applications web et mobiles de bout en bout, et j'industrialise leur livraison jusqu'en production.</p>
       <ul class="stats"><li><b>3 ans</b> d'expérience</li><li><b>Bac+5</b> ingénieur CTI</li><li><b>TOEIC</b> 865</li></ul>
+      <ul class="tags"><li>CI/CD &amp; DevOps</li><li>Docker · AWS</li><li>Node.js · NestJS</li><li>React · React Native</li></ul>
+      <p class="coords"><span>Marseille · mobilité France entière</span><a href="mailto:leolinsanga@gmail.com">leolinsanga@gmail.com</a><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a></p>
       <div class="cta">
-        <a href="#projets" class="btn">Voir mes projets</a>
+        <a href="#experiences" class="btn">Voir mes expériences</a>
         <a href="#contact" class="btn ghost">Travaillons ensemble</a>
       </div>
     </div>
@@ -59,6 +62,62 @@
         </g>
       </svg>
       <span class="bulle">Bienvenue !</span>
+    </div>
+  </section>
+
+  <!-- Profil -->
+  <section id="profil" class="section">
+    <h2><span>Mon</span> profil</h2>
+    <div class="profil">
+      <p>Ingénieur logiciel et DevOps diplômé (CTI, Bac+5), je conçois des applications web et mobiles de bout en bout, du besoin métier à la mise en production, et j'automatise ce qui doit l'être : pipelines CI/CD, conteneurs, déploiements et supervision. Mon objectif est simple : des livraisons fiables, que l'équipe ne redoute plus.</p>
+      <p>Deux ans chez Optimum Tracker, du stage à l'alternance puis au poste de développeur fullstack et mobile, m'ont appris à livrer pour le terrain. J'y ai conçu la GMAO interne qui a réduit de 60 % le temps de traitement des interventions, fait évoluer les applications mobiles de supervision de centrales agrivoltaïques et automatisé leurs builds jusqu'aux stores. Je travaille aujourd'hui chez Dooke Consulting, à Paris en hybride, sur des projets web, mobiles et DevOps pour des clients en France et en Afrique.</p>
+      <p>En dehors du travail, je construis mes propres produits : GoWithMe, une marketplace de colivraison entre l'Afrique et l'Europe, SplitEase pour partager les dépenses, et un lab Kubernetes où je teste Terraform, Ansible et Argo CD avant de m'en servir en production.</p>
+    </div>
+  </section>
+
+  <!-- Expériences -->
+  <section id="experiences" class="section">
+    <h2><span>Mes</span> expériences</h2>
+    <div class="xp-list">
+      <article class="xp t-yellow">
+        <header><span class="date">Depuis 05/2026</span><h3>Ingénieur logiciel et DevOps <em>Dooke Consulting · Paris, hybride · CDD</em></h3></header>
+        <dl class="csbr">
+          <div><dt>Contexte</dt><dd>Cabinet de conseil qui conçoit et maintient des applications web et mobiles pour des clients en France et en Afrique.</dd></div>
+          <div><dt>Besoin</dt><dd>Livrer plus vite et plus sûrement sur des projets aux technologies variées, dont certains vieillissants, et rendre les équipes clientes autonomes.</dd></div>
+          <div><dt>Solution</dt><dd>Applications web et API (React, TypeScript, Node.js, NestJS, Symfony, PostgreSQL) et applications mobiles React Native et Expo. Chaînes CI/CD GitHub Actions et GitLab CI sur plusieurs environnements, conteneurs Docker sur Linux et AWS derrière Nginx, supervision Prometheus et Grafana. Migrations, refactoring, tests Jest et revues de code.</dd></div>
+          <div><dt>Résultat</dt><dd>Des livraisons industrialisées de la recette à la production, des environnements standardisés et documentés, et des équipes clientes formées aux pratiques DevOps.</dd></div>
+        </dl>
+        <ul class="chips"><li>GitHub Actions</li><li>GitLab CI</li><li>Docker</li><li>AWS</li><li>NestJS</li><li>React Native</li><li>Grafana</li></ul>
+      </article>
+      <article class="xp t-teal">
+        <header><span class="date">09/2025 à 04/2026</span><h3>Développeur fullstack et mobile <em>Optimum Tracker · Meyreuil</em></h3></header>
+        <dl class="csbr">
+          <div><dt>Contexte</dt><dd>Acteur de l'agrivoltaïsme dont les équipes terrain pilotent et supervisent les centrales avec les applications mobiles TCU Control et AgriTrack.</dd></div>
+          <div><dt>Besoin</dt><dd>Faire évoluer ces applications, garantir la connexion sur le terrain et fiabiliser leur publication sur les stores.</dd></div>
+          <div><dt>Solution</dt><dd>Nouvelles fonctionnalités et correctifs en React Native, builds automatisés avec Appcircle et Codemagic (signature, certificats, distribution multi environnements), API Node.js pour le web et le mobile, services conteneurisés avec Docker et Nginx, support de la GMAO en production.</dd></div>
+          <div><dt>Résultat</dt><dd>Des livraisons mobiles continues, des déploiements reproductibles et une API qui répond en moins de 500 ms au 95e centile.</dd></div>
+        </dl>
+        <ul class="chips"><li>React Native</li><li>Node.js</li><li>Codemagic</li><li>Appcircle</li><li>Docker</li><li>Nginx</li></ul>
+      </article>
+      <article class="xp t-pink">
+        <header><span class="date">04/2024 à 09/2025</span><h3>Développeur fullstack, stage puis alternance <em>Optimum Tracker · Meyreuil</em></h3></header>
+        <dl class="csbr">
+          <div><dt>Contexte</dt><dd>Les interventions de maintenance sur les centrales manquaient d'un outil unique pour les suivre, du ticket jusqu'au terrain.</dd></div>
+          <div><dt>Besoin</dt><dd>Centraliser tickets, planification et suivi, donner une vue claire aux équipes métier, et livrer sans casser la production.</dd></div>
+          <div><dt>Solution</dt><dd>Conception de la GMAO interne (React, Node.js, Express, MySQL) : tickets, planification, tableaux de bord, droits utilisateurs et écrans mobiles de suivi terrain. Intégration continue avec GitHub Actions et Codemagic, tests Jest et E2E, tableaux de bord Grafana et alertes, scripts Bash et Python, documentation d'exploitation.</dd></div>
+          <div><dt>Résultat</dt><dd><ul class="wins"><li><b>50 %</b> d'anomalies détectées avant la production</li><li><b>−40 %</b> d'incidents</li><li><b>−60 %</b> de temps de traitement des interventions</li></ul></dd></div>
+        </dl>
+        <ul class="chips"><li>React</li><li>Node.js</li><li>MySQL</li><li>GitHub Actions</li><li>Jest</li><li>Grafana</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Formation -->
+  <section id="formation" class="section">
+    <h2><span>Ma</span> formation</h2>
+    <div class="grid">
+      <article class="card c-blue"><span class="date">2022 à 2025</span><h3>Diplôme d'ingénieur informatique</h3><p><b>3iL Ingénieurs, Limoges</b>, école habilitée par la CTI.</p></article>
+      <article class="card c-yellow"><span class="date">2020 à 2022</span><h3>Classe préparatoire MPSI</h3><p><b>IUC, Douala, Cameroun.</b> Anglais professionnel, TOEIC 865.</p></article>
     </div>
   </section>
 
@@ -101,21 +160,6 @@
         <div class="links"><a href="#videos" class="btn small">Voir des rendus</a></div>
       </article>
     </div>
-  </section>
-
-  <!-- Parcours -->
-  <section id="parcours" class="section">
-    <h2><span>Mon</span> parcours</h2>
-    <ol class="timeline">
-      <li class="t-yellow"><span class="date">Depuis 05/2026</span><h3>Ingénieur logiciel et DevOps <em>Dooke Consulting, Paris (hybride)</em></h3>
-        <p>Applications web, mobiles et API REST pour des clients en France et en Afrique, de l'analyse du besoin à la mise en production. Chaînes CI/CD (GitHub Actions, GitLab CI), conteneurs Docker sur Linux et AWS, supervision Prometheus et Grafana, migrations et refactoring.</p></li>
-      <li class="t-teal"><span class="date">09/2025 à 04/2026</span><h3>Développeur fullstack et mobile <em>Optimum Tracker, Meyreuil</em></h3>
-        <p>Applis mobiles React Native TCU Control et AgriTrack (supervision de centrales agrivoltaïques), builds automatisés avec Appcircle et Codemagic, API Node.js avec un temps de réponse P95 sous 500 ms, services conteneurisés derrière Nginx.</p></li>
-      <li class="t-pink"><span class="date">04/2024 à 09/2025</span><h3>Développeur fullstack, stage puis alternance <em>Optimum Tracker, Meyreuil</em></h3>
-        <p>Conception de la GMAO interne (React, Node.js, MySQL) et intégration continue avec tests Jest et E2E.</p>
-        <ul class="wins"><li><b>50 %</b> d'anomalies détectées avant la production</li><li><b>−40 %</b> d'incidents</li><li><b>−60 %</b> de temps de traitement des interventions</li></ul></li>
-      <li class="t-blue"><span class="date">2022 à 2025</span><h3>Diplôme d'ingénieur informatique (CTI) <em>3iL Ingénieurs, Limoges</em></h3><p>Après une classe préparatoire MPSI à l'IUC de Douala, au Cameroun (2020 à 2022).</p></li>
-    </ol>
   </section>
 
   <!-- 4. Compétences -->
