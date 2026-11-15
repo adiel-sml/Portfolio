@@ -257,3 +257,17 @@ ol.liste .quand { grid-column: 2; justify-self: start; text-align: left; margin-
 .cv a:hover { background: var(--yellow); }
 @media (max-width: 860px) { .duo.epure { grid-template-columns: 1fr; gap: 40px; } }
 @media (max-width: 560px) { .epure .liste a, .epure ol.liste a { grid-template-columns: 40px 1fr; } .epure .badge, .epure ol.liste .quand { grid-column: 2; justify-self: start; text-align: left; margin-top: -6px; } }
+/* pages dédiées */
+.detail { max-width: 980px; }
+.retour { display: inline-block; margin-bottom: 22px; font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--ink); }
+.retour:hover { color: var(--red); }
+.seul { transform: none !important; }
+.card.seul { padding: 32px; } .card.seul h3 { font-size: 40px; }
+.sous { font-size: 26px; margin: 40px 0 16px; }
+.ecrans { display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 4px 18px; }
+.detail .videos video { box-shadow: 6px 6px 0 var(--ink); }
+.detail .videos figcaption { color: var(--ink); } .detail .videos small { color: var(--red); }
+.pager { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 36px; padding-top: 18px; border-top: 2px solid var(--ink); }
+.pager a { font-weight: 800; text-decoration: none; } .pager a:hover { color: var(--red); } .pager .suiv { margin-left: auto; }
+.detail-lien { display: inline-block; margin-top: 14px; font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--ink); }
+.detail-lien:hover { color: var(--red); }

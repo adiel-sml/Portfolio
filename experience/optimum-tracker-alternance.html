@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingénieur DevOps et fullstack, stage puis alternance, chez Optimum Tracker · Adiel Sanga</title>
+<meta name="description" content="Ingénieur DevOps et fullstack, stage puis alternance, chez Optimum Tracker : contexte, besoin, solution et résultat.">
+<meta property="og:title" content="Ingénieur DevOps et fullstack, stage puis alternance, chez Optimum Tracker · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences" aria-current="page">Expériences</a><a href="/projets">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="xp seul t-pink">
+        <header><span class="date">04/2024 à 09/2025</span><h3>Ingénieur DevOps et fullstack, stage puis alternance <em>Optimum Tracker · Meyreuil</em></h3></header>
+        <dl class="csbr">
+          <div><dt>Contexte</dt><dd>Les trackers d'Optimum Tracker équipent des centrales solaires partout en France. Leur maintenance mobilise de nombreuses interventions sur site, qu'il fallait suivre dans un outil unique, du ticket jusqu'au terrain.</dd></div>
+          <div><dt>Besoin</dt><dd>Centraliser tickets, planification et suivi, et donner une vue claire aux équipes métier. Livrer sans casser la production grâce à des tests automatisés, superviser les serveurs, l'API et les jobs de synchronisation des données terrain, être alerté dès qu'un incident survient, et automatiser l'exploitation courante : sauvegardes, purge des logs, contrôles de cohérence.</dd></div>
+          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Intégration continue avec GitHub Actions et Codemagic : compilation, tests Jest et E2E, livraison multi environnements. Tableaux de bord Grafana et alertes sur les serveurs, l'API et les jobs de synchronisation. Automatisation par scripts Bash et Python : sauvegardes, purge des logs, contrôles de cohérence des données terrain. Documentation d'exploitation et runbooks d'incident.</p><p><b class="axe dev">Développement</b> Conception de la GMAO interne (React, Node.js, Express, MySQL) : tickets, planification, tableaux de bord, droits utilisateurs et écrans mobiles de suivi terrain.</p><p><b class="axe agile">Agile</b> Méthodologie Agile Scrum en lien direct avec les équipes métier : recueil et priorisation des besoins, livraisons itératives, revues de code et Git flow.</p></dd></div>
+          <div><dt>Résultat</dt><dd><ul class="wins"><li><b>50 %</b> d'anomalies détectées avant la production</li><li><b>−40 %</b> d'incidents</li><li><b>−60 %</b> de temps de traitement des interventions</li></ul></dd></div>
+        </dl>
+        <ul class="chips"><li>GitHub Actions</li><li>Codemagic</li><li>Grafana</li><li>Bash</li><li>Python</li><li>Jest</li><li>React</li><li>Node.js</li><li>MySQL</li></ul>
+      </article>
+    <nav class="pager"><a class="prec" href="/experience/optimum-tracker">← Expérience plus récente</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodle Video · Adiel Sanga</title>
+<meta name="description" content="Doodle Video, side project d'Adiel Sanga.">
+<meta property="og:title" content="Doodle Video · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets" aria-current="page">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="card seul c-yellow">
+        <div class="card-head"><span class="emoji-dot">D</span><h3>Doodle Video</h3></div>
+        <p>Un plugin Claude Code (skills et outils) qui pilote un pipeline de production vidéo automatisé : moteur d'animation 2D en canvas, voix off synthétisée et alignée mot à mot, rendu headless, contrôles qualité automatiques (zones sûres, plans figés, transcription de la voix) et export multi formats. Un épisode par jour sur TikTok.</p>
+        <ul class="chips"><li>Claude Code</li><li>JavaScript</li><li>Python</li><li>Playwright</li><li>FFmpeg</li><li>Whisper</li></ul>
+        
+      </article>
+    <h3 class="sous">Rendus produits par le plugin</h3><div class="videos">
+      <figure><video src="/assets/videos/ep59.mp4" poster="assets/videos/ep59.jpg" controls preload="none" playsinline></video><figcaption>Vendredi 13 <small>comédie</small></figcaption></figure>
+      <figure><video src="/assets/videos/ep60.mp4" poster="assets/videos/ep60.jpg" controls preload="none" playsinline></video><figcaption>Le 19 novembre <small>comédie</small></figcaption></figure>
+      <figure><video src="/assets/videos/ep58.mp4" poster="assets/videos/ep58.jpg" controls preload="none" playsinline></video><figcaption>Tu l'as vu ? <small>énigme</small></figcaption></figure>
+    </div>
+    <nav class="pager"><a class="suiv" href="/projet/gowithme">Projet suivant : GoWithMe →</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoWithMe · Adiel Sanga</title>
+<meta name="description" content="GoWithMe, side project d'Adiel Sanga.">
+<meta property="og:title" content="GoWithMe · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets" aria-current="page">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="card seul big c-blue">
+        <div class="card-head"><span class="emoji-dot">G</span><h3>GoWithMe</h3></div>
+        <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
+        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
+        <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
+        
+      </article>
+    <h3 class="sous">Aperçu de l'application</h3><div class="ecrans"><figure class="telephone"><img src="/assets/apercus/gowithme-1.webp" alt="GoWithMe, écran 1" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/gowithme-2.webp" alt="GoWithMe, écran 2" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/gowithme-3.webp" alt="GoWithMe, écran 3" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/gowithme-4.webp" alt="GoWithMe, écran 4" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/gowithme-5.webp" alt="GoWithMe, écran 5" loading="lazy" width="540" height="1169"></figure></div>
+    <nav class="pager"><a class="suiv" href="/projet/splitease">Projet suivant : SplitEase →</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

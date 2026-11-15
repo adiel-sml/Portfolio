@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SplitEase · Adiel Sanga</title>
+<meta name="description" content="SplitEase, side project d'Adiel Sanga.">
+<meta property="og:title" content="SplitEase · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets" aria-current="page">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="card seul big c-teal">
+        <div class="card-head"><span class="emoji-dot">S</span><h3>SplitEase</h3></div>
+        <p>Une application installable (PWA) pour partager les dépenses entre amis, en voyage ou en colocation.</p>
+        <ul class="points"><li>Simplification des dettes par graphe : le moins de remboursements possible</li><li>Authentification, base PostgreSQL et synchronisation en temps réel avec Supabase</li><li>Mode hors ligne, export CSV, partage de groupe par lien</li><li>Mobile first, thème clair ou sombre, accessibilité WCAG AA</li></ul>
+        <ul class="chips"><li>React 18</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>PWA</li></ul>
+        
+      </article>
+    <h3 class="sous">Aperçu de l'application</h3><div class="ecrans"><figure class="telephone"><img src="/assets/apercus/splitease-1.webp" alt="SplitEase, écran 1" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/splitease-2.webp" alt="SplitEase, écran 2" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/splitease-3.webp" alt="SplitEase, écran 3" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/splitease-4.webp" alt="SplitEase, écran 4" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/splitease-5.webp" alt="SplitEase, écran 5" loading="lazy" width="540" height="1169"></figure><figure class="telephone"><img src="/assets/apercus/splitease-6.webp" alt="SplitEase, écran 6" loading="lazy" width="540" height="1169"></figure></div>
+    <nav class="pager"><a class="suiv" href="/projet/lab-devops">Projet suivant : Lab DevOps →</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

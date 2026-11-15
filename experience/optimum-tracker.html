@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingénieur DevOps et fullstack chez Optimum Tracker · Adiel Sanga</title>
+<meta name="description" content="Ingénieur DevOps et fullstack chez Optimum Tracker : contexte, besoin, solution et résultat.">
+<meta property="og:title" content="Ingénieur DevOps et fullstack chez Optimum Tracker · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences" aria-current="page">Expériences</a><a href="/projets">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="xp seul t-teal">
+        <header><span class="date">09/2025 à 04/2026</span><h3>Ingénieur DevOps et fullstack <em>Optimum Tracker · Meyreuil</em></h3></header>
+        <dl class="csbr">
+          <div><dt>Contexte</dt><dd>Optimum Tracker, leader français du tracker solaire, conçoit des structures qui orientent les panneaux selon la course du soleil : O-Track pour les grandes centrales, Agri-Track pour l'agrivoltaïsme. Leur pilotage logiciel (Opti-Sky Control) produit jusqu'à 25 % d'énergie en plus qu'une installation fixe. Sur le terrain, les équipes pilotent et supervisent les centrales avec les applications mobiles TCU Control et AgriTrack.</dd></div>
+          <div><dt>Besoin</dt><dd>Faire évoluer ces applications et garantir la connexion sur le terrain. Automatiser des builds mobiles et une gestion des certificats encore fastidieuses, fiabiliser la publication sur les stores, stabiliser l'infrastructure de production, surveiller la disponibilité de la GMAO et traiter rapidement les incidents remontés par les équipes.</dd></div>
+          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Chaînes de build mobiles Appcircle et Codemagic : build, signature, gestion des certificats, distribution multi environnements et publication sur les stores. Services conteneurisés avec Docker Compose sur Linux, Nginx en reverse proxy avec SSL, secrets par environnement. Supervision des déploiements de la GMAO, gestion des incidents de disponibilité et support aux développeurs sur les builds.</p><p><b class="axe dev">Développement</b> Nouvelles fonctionnalités et correctifs des applications React Native, API Node.js pour le web et le mobile.</p><p><b class="axe agile">Agile</b> Équipe en Agile Scrum : besoins priorisés avec les équipes terrain, livraisons itératives, revues de code et Git flow.</p></dd></div>
+          <div><dt>Résultat</dt><dd>Des déploiements reproductibles, des environnements de production stabilisés, des livraisons mobiles continues et une API qui répond en moins de 500 ms au 95e centile.</dd></div>
+        </dl>
+        <ul class="chips"><li>Codemagic</li><li>Appcircle</li><li>Docker Compose</li><li>Nginx</li><li>SSL/TLS</li><li>React Native</li><li>Node.js</li></ul>
+      </article>
+    <nav class="pager"><a class="prec" href="/experience/dooke">← Expérience plus récente</a><a class="suiv" href="/experience/optimum-tracker-alternance">Expérience précédente →</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

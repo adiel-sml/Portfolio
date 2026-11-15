@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab DevOps · Adiel Sanga</title>
+<meta name="description" content="Lab DevOps, side project d'Adiel Sanga.">
+<meta property="og:title" content="Lab DevOps · Adiel Sanga">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets" aria-current="page">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <section class="section detail">
+    <a class="retour" href="/">← Retour à l'accueil</a>
+    <article class="card seul c-green">
+        <div class="card-head"><span class="emoji-dot">L</span><h3>Lab DevOps</h3></div>
+        <p>Mon laboratoire personnel : un cluster Kubernetes k3s provisionné avec Terraform et Ansible, des déploiements GitOps avec Helm et Argo CD, et des pipelines GitLab CI/CD. C'est là que je teste avant de mettre en production.</p>
+        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>k3s</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
+      </article>
+    
+    <nav class="pager"><a class="suiv" href="/projet/ca-joue">Projet suivant : Ça joue →</a></nav>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="/a-propos">À propos</a><a href="/experiences">Expériences</a><a href="/projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga</p>
+</footer>
+
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>
