@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets · Adiel Sanga</title>
+<meta name="description" content="Side projects d'Adiel Sanga : GoWithMe, SplitEase, Lab DevOps, Ça joue et Doodle Video.">
+<meta property="og:title" content="Adiel Sanga · Ingénieur logiciel et DevOps">
+<meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
+<meta property="og:image" content="assets/adiel-sanga.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets" aria-current="page">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+</header>
+<main>
+  <!-- 2. Projets -->
+  <section id="projets" class="section">
+    <h2><span>Side</span> projects</h2>
+    <div class="featured">
+      <article id="gowithme" class="card big c-blue">
+        <div class="card-head"><span class="emoji-dot">G</span><h3>GoWithMe</h3></div>
+        <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
+        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
+        <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
+        <div class="links"><button type="button" class="btn small" data-apercu="gowithme" data-n="5" data-titre="GoWithMe">Voir un aperçu</button></div>
+      </article>
+      <article id="splitease" class="card big c-teal">
+        <div class="card-head"><span class="emoji-dot">S</span><h3>SplitEase</h3></div>
+        <p>Une application installable (PWA) pour partager les dépenses entre amis, en voyage ou en colocation.</p>
+        <ul class="points"><li>Simplification des dettes par graphe : le moins de remboursements possible</li><li>Authentification, base PostgreSQL et synchronisation en temps réel avec Supabase</li><li>Mode hors ligne, export CSV, partage de groupe par lien</li><li>Mobile first, thème clair ou sombre, accessibilité WCAG AA</li></ul>
+        <ul class="chips"><li>React 18</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>PWA</li></ul>
+        <div class="links"><button type="button" class="btn small" data-apercu="splitease" data-n="6" data-titre="SplitEase">Voir un aperçu</button></div>
+      </article>
+    </div>
+    <h3 class="autres">Autres projets</h3>
+    <div class="grid three">
+      <article id="lab-devops" class="card c-green">
+        <div class="card-head"><span class="emoji-dot">L</span><h3>Lab DevOps</h3></div>
+        <p>Mon laboratoire personnel : un cluster Kubernetes k3s provisionné avec Terraform et Ansible, des déploiements GitOps avec Helm et Argo CD, et des pipelines GitLab CI/CD. C'est là que je teste avant de mettre en production.</p>
+        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>k3s</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
+      </article>
+      <article id="ca-joue" class="card c-pink">
+        <div class="card-head"><span class="emoji-dot">Ç</span><h3>Ça joue</h3></div>
+        <p>Vingt-trois jeux de soirée sur un seul téléphone qu'on se passe : Mimes, Time's Up, Undercover, Loup-garou avec meneur vocal, Quiz de 2 250 questions, jeux pour les couples. Gratuit, sans compte, sans pub, utilisable hors ligne.</p>
+        <ul class="chips"><li>JavaScript</li><li>Vite</li><li>PWA</li><li>Capacitor</li></ul>
+        <div class="links"><button type="button" class="btn small" data-apercu="cajoue" data-n="6" data-titre="Ça joue">Voir un aperçu</button></div>
+      </article>
+      <article id="doodle-video" class="card c-yellow">
+        <div class="card-head"><span class="emoji-dot">D</span><h3>Doodle Video</h3></div>
+        <p>Un pipeline de production vidéo automatisé : moteur d'animation 2D en canvas, voix off synthétisée et alignée mot à mot, rendu headless, contrôles qualité automatiques (zones sûres, plans figés, transcription de la voix) et export multi formats. Un épisode par jour sur TikTok.</p>
+        <ul class="chips"><li>JavaScript</li><li>Python</li><li>Playwright</li><li>FFmpeg</li><li>Whisper</li></ul>
+        <div class="links"><a href="#videos" class="btn small">Voir des rendus</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. Vidéos -->
+  <section id="videos" class="section dark">
+    <h2><span>Doodle Video</span> en images</h2>
+    <p class="sub">Trois rendus produits par mon pipeline vidéo automatisé, du script au mp4 publié, sans montage à la main.</p>
+    <div class="videos">
+      <figure><video src="assets/videos/ep59.mp4" poster="assets/videos/ep59.jpg" controls preload="none" playsinline></video><figcaption>Vendredi 13 <small>comédie</small></figcaption></figure>
+      <figure><video src="assets/videos/ep60.mp4" poster="assets/videos/ep60.jpg" controls preload="none" playsinline></video><figcaption>Le 19 novembre <small>comédie</small></figcaption></figure>
+      <figure><video src="assets/videos/ep58.mp4" poster="assets/videos/ep58.jpg" controls preload="none" playsinline></video><figcaption>Tu l'as vu ? <small>énigme</small></figcaption></figure>
+    </div>
+      </section>
+
+  <!-- 5. Contact -->
+  <section id="contact" class="section contact">
+    <h2><span>On</span> discute ?</h2>
+    <p class="sub">Un poste, une mission, un projet d'application ou d'industrialisation : écris-moi. Mobilité France entière.</p>
+    <div class="cta center">
+      <a href="mailto:leolinsanga@gmail.com" class="btn">leolinsanga@gmail.com</a>
+      <a href="https://github.com/adiel-sml" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/adiel-sanga" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga · Fait main, avec beaucoup de traits noirs</p>
+</footer>
+<dialog id="apercu" aria-labelledby="apercu-titre">
+  <div class="apercu-head"><h3 id="apercu-titre">Aperçu</h3><button type="button" class="btn small ghost" data-fermer aria-label="Fermer l'aperçu">Fermer</button></div>
+  <div class="apercu-ecrans"></div>
+  <p class="apercu-aide">Fais défiler pour voir les écrans.</p>
+</dialog>
+<script>
+(() => {
+  const d = document.getElementById('apercu'), zone = d.querySelector('.apercu-ecrans'), titre = d.querySelector('#apercu-titre');
+  document.querySelectorAll('[data-apercu]').forEach(b => b.addEventListener('click', () => {
+    const app = b.dataset.apercu, n = +b.dataset.n;
+    titre.textContent = 'Aperçu de ' + b.dataset.titre;
+    zone.innerHTML = Array.from({ length: n }, (_, i) => `<figure class="telephone"><img src="assets/apercus/${app}-${i + 1}.webp" alt="${b.dataset.titre}, écran ${i + 1}" loading="lazy" width="540" height="1169"></figure>`).join('');
+    zone.scrollLeft = 0; d.showModal();
+  }));
+  d.querySelector('[data-fermer]').addEventListener('click', () => d.close());
+  d.addEventListener('click', e => { if (e.target === d) d.close(); });
+})();
+</script>
+<script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -10,4 +10,4 @@ Site statique (HTML et CSS, sans étape de construction).
 
 ## Modifier le contenu
 
-Tout le texte est dans `index.html`, les couleurs et la mise en page dans `style.css`, les vidéos dans `assets/videos/`. Réglages Vercel (cache des fichiers) : `vercel.json`.
+Le texte est dans `index.html` (accueil), `a-propos.html`, `experiences.html` et `projets.html` ; les couleurs et la mise en page dans `style.css`, les vidéos dans `assets/videos/`. Réglages Vercel (cache des fichiers) : `vercel.json`.

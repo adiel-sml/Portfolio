@@ -16,192 +16,50 @@
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="#top">A<span>S</span></a>
-  <nav>
-    <a href="#profil">Profil</a>
-    <a href="#experiences">Expériences</a>
-    <a href="#projets">Side projects</a>
-    <a href="#competences">Compétences</a>
-    <a href="#contact" class="btn small">Me contacter</a>
-  </nav>
+  <a class="logo" href="/">A<span>S</span></a>
+  <nav><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
 </header>
-
-<main id="top">
-  <!-- 1. Accueil -->
-  <section class="hero">
-    <div class="hero-text">
-      <p class="tag">Salut, moi c'est</p>
-      <h1>Adiel Sanga</h1>
-      <p class="role">Ingénieur logiciel<br><span>&amp; DevOps</span></p>
-      <p class="lead">Je conçois des applications web et mobiles de bout en bout, et j'industrialise leur livraison jusqu'en production.</p>
-      <ul class="stats"><li><b>3 ans</b> d'expérience</li><li><b>Bac+5</b> ingénieur CTI</li><li><b>TOEIC</b> 865</li></ul>
-      <ul class="tags"><li>CI/CD &amp; DevOps</li><li>Docker · AWS</li><li>Node.js · NestJS</li><li>React · React Native</li><li>Agile Scrum</li></ul>
-      <p class="coords"><span>Marseille · mobilité France entière</span><a href="mailto:leolinsanga@gmail.com">leolinsanga@gmail.com</a><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a></p>
-      <div class="cta">
-        <a href="#experiences" class="btn">Voir mes expériences</a>
-        <a href="#contact" class="btn ghost">Travaillons ensemble</a>
-      </div>
-    </div>
-    <div class="hero-art">
-      <picture><source srcset="assets/adiel-sanga.webp" type="image/webp"><img class="photo" src="assets/adiel-sanga.jpg" alt="Portrait d'Adiel Sanga" width="600" height="600"></picture>
-      <span class="bulle">Bienvenue !</span>
-    </div>
+<main>
+  <section class="hero-lite">
+    <picture><source srcset="assets/adiel-sanga.webp" type="image/webp"><img class="avatar" src="assets/adiel-sanga.jpg" alt="Portrait d'Adiel Sanga" width="600" height="600"></picture>
+    <h1 class="salut">Salut, je suis <span>Adiel Sanga</span>,<br>ingénieur logiciel et DevOps.</h1>
+    <p class="intro">Basé à Marseille. Je conçois des applications web et mobiles de bout en bout, et j'industrialise leur livraison : CI/CD, conteneurs, cloud et supervision, en <a href="a-propos">méthodologie Agile</a>.</p>
+    <ul class="chiffres"><li><b>3 ans</b> d'expérience</li><li><b>Bac+5</b> ingénieur CTI</li><li><b>−40 %</b> d'incidents en production</li></ul>
+    <p class="reseaux"><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">leolinsanga@gmail.com</a></p>
   </section>
 
-  <!-- Profil -->
-  <section id="profil" class="section">
-    <h2><span>Mon</span> profil</h2>
-    <div class="profil">
-      <p>Ingénieur logiciel et DevOps diplômé (CTI, Bac+5), je conçois des applications web et mobiles de bout en bout, du besoin métier à la mise en production, et j'automatise ce qui doit l'être : pipelines CI/CD, conteneurs, déploiements et supervision. Je travaille en méthodologie Agile Scrum, au plus près des équipes métier, avec des livraisons courtes et régulières. Mon objectif est simple : des livraisons fiables, que l'équipe ne redoute plus.</p>
-      <p>Deux ans chez Optimum Tracker, leader français du tracker solaire, du stage à l'alternance puis au poste d'ingénieur DevOps et fullstack, m'ont appris à livrer pour le terrain. J'y ai conçu la GMAO interne qui a réduit de 60 % le temps de traitement des interventions, fait évoluer les applications mobiles de supervision de centrales agrivoltaïques et automatisé leurs builds jusqu'aux stores. Je travaille aujourd'hui chez Dooke Consulting, société d'ingénierie du numérique, à Paris en hybride, sur des projets web, mobiles et DevOps pour des clients en France et en Afrique.</p>
-      <p>En dehors du travail, je construis mes propres produits : GoWithMe, une marketplace de colivraison entre l'Afrique et l'Europe, SplitEase pour partager les dépenses, Ça joue, une appli de vingt-trois jeux de soirée, Doodle Video, un pipeline qui produit tout seul des vidéos animées, et un lab Kubernetes où je teste Terraform, Ansible et Argo CD avant de m'en servir en production.</p>
+  <section class="duo">
+    <div class="colonne">
+      <h2 class="petit-titre">Projets à la une</h2>
+      <ul class="liste">
+        <li><a href="projets#gowithme"><span class="pastille c-blue">G</span><span class="txt"><b>GoWithMe</b><small>Mobile · NestJS · Docker</small><em>Marketplace de colivraison entre l'Afrique et l'Europe, paiements séquestrés et KYC.</em></span><span class="badge">Side project</span></a></li>
+        <li><a href="projets#splitease"><span class="pastille c-teal">S</span><span class="txt"><b>SplitEase</b><small>PWA · React · Supabase</small><em>Les comptes entre amis, avec simplification des dettes par graphe.</em></span><span class="badge">Side project</span></a></li>
+        <li><a href="projets#lab-devops"><span class="pastille c-green">L</span><span class="txt"><b>Lab DevOps</b><small>k3s · Terraform · Argo CD</small><em>Cluster Kubernetes provisionné en code, déploiements GitOps.</em></span><span class="badge">Infra</span></a></li>
+        <li><a href="projets#ca-joue"><span class="pastille c-pink">Ç</span><span class="txt"><b>Ça joue</b><small>PWA · Vite · Capacitor</small><em>Vingt-trois jeux de soirée sur un seul téléphone, hors ligne.</em></span><span class="badge">Gratuit</span></a></li>
+        <li><a href="projets#doodle-video"><span class="pastille c-yellow">D</span><span class="txt"><b>Doodle Video</b><small>Canvas · Python · FFmpeg</small><em>Pipeline qui produit tout seul des vidéos animées.</em></span><span class="badge">Automatisation</span></a></li>
+      </ul>
+      <a class="voir" href="projets">Voir tous les projets →</a>
     </div>
-  </section>
-
-  <!-- Expériences -->
-  <section id="experiences" class="section">
-    <h2><span>Mes</span> expériences</h2>
-    <div class="xp-list">
-      <article class="xp t-yellow">
-        <header><span class="date">Depuis 05/2026</span><h3>Ingénieur logiciel et DevOps <em>Dooke Consulting · Paris, hybride · CDD</em></h3></header>
-        <dl class="csbr">
-          <div><dt>Contexte</dt><dd>Dooke Consulting est la division ingénierie du numérique de Dooke Corporation, présente en France et en Afrique. Elle accompagne des entreprises, en France et en Afrique, dans leur passage au numérique : développement logiciel, web et mobile, migrations technologiques, refactoring, formation et transfert de compétences.</dd></div>
-          <div><dt>Besoin</dt><dd>Livrer plus vite et plus sûrement sur des projets aux technologies variées, dont certains vieillissants. Industrialiser des déploiements encore manuels, standardiser l'infrastructure et l'hébergement de chaque environnement, sécuriser les accès et les secrets, superviser les applications en production pour détecter et remonter les incidents avant les utilisateurs, et rendre les équipes clientes autonomes.</dd></div>
-          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Chaînes CI/CD GitHub Actions et GitLab CI : build, tests automatisés, contrôle qualité et déploiement en recette, préproduction et production. Applications conteneurisées avec Docker et Docker Compose, déployées sur Linux et AWS (EC2, S3, IAM) derrière Nginx, avec certificats SSL/TLS et gestion des secrets. Supervision Prometheus, Grafana et alertes, documentation d'exploitation et runbooks.</p><p><b class="axe dev">Développement</b> Applications web et API (React, TypeScript, Node.js, NestJS, Symfony, PostgreSQL), applications mobiles React Native et Expo, migrations et refactoring, tests Jest et revues de code.</p><p><b class="axe agile">Agile</b> Travail en Agile Scrum avec les équipes clientes : priorisation du besoin, livraisons itératives, revues de code, Git flow et transfert de compétences.</p></dd></div>
-          <div><dt>Résultat</dt><dd>Des livraisons industrialisées de la recette à la production, des environnements standardisés et documentés, et des équipes clientes formées aux pratiques DevOps.</dd></div>
-        </dl>
-        <ul class="chips"><li>GitHub Actions</li><li>GitLab CI</li><li>Docker</li><li>AWS</li><li>Nginx</li><li>Prometheus</li><li>Grafana</li><li>NestJS</li><li>React Native</li></ul>
-      </article>
-      <article class="xp t-teal">
-        <header><span class="date">09/2025 à 04/2026</span><h3>Ingénieur DevOps et fullstack <em>Optimum Tracker · Meyreuil</em></h3></header>
-        <dl class="csbr">
-          <div><dt>Contexte</dt><dd>Optimum Tracker, leader français du tracker solaire, conçoit des structures qui orientent les panneaux selon la course du soleil : O-Track pour les grandes centrales, Agri-Track pour l'agrivoltaïsme. Leur pilotage logiciel (Opti-Sky Control) produit jusqu'à 25 % d'énergie en plus qu'une installation fixe. Sur le terrain, les équipes pilotent et supervisent les centrales avec les applications mobiles TCU Control et AgriTrack.</dd></div>
-          <div><dt>Besoin</dt><dd>Faire évoluer ces applications et garantir la connexion sur le terrain. Automatiser des builds mobiles et une gestion des certificats encore fastidieuses, fiabiliser la publication sur les stores, stabiliser l'infrastructure de production, surveiller la disponibilité de la GMAO et traiter rapidement les incidents remontés par les équipes.</dd></div>
-          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Chaînes de build mobiles Appcircle et Codemagic : build, signature, gestion des certificats, distribution multi environnements et publication sur les stores. Services conteneurisés avec Docker Compose sur Linux, Nginx en reverse proxy avec SSL, secrets par environnement. Supervision des déploiements de la GMAO, gestion des incidents de disponibilité et support aux développeurs sur les builds.</p><p><b class="axe dev">Développement</b> Nouvelles fonctionnalités et correctifs des applications React Native, API Node.js pour le web et le mobile.</p><p><b class="axe agile">Agile</b> Équipe en Agile Scrum : besoins priorisés avec les équipes terrain, livraisons itératives, revues de code et Git flow.</p></dd></div>
-          <div><dt>Résultat</dt><dd>Des déploiements reproductibles, des environnements de production stabilisés, des livraisons mobiles continues et une API qui répond en moins de 500 ms au 95e centile.</dd></div>
-        </dl>
-        <ul class="chips"><li>Codemagic</li><li>Appcircle</li><li>Docker Compose</li><li>Nginx</li><li>SSL/TLS</li><li>React Native</li><li>Node.js</li></ul>
-      </article>
-      <article class="xp t-pink">
-        <header><span class="date">04/2024 à 09/2025</span><h3>Ingénieur DevOps et fullstack, stage puis alternance <em>Optimum Tracker · Meyreuil</em></h3></header>
-        <dl class="csbr">
-          <div><dt>Contexte</dt><dd>Les trackers d'Optimum Tracker équipent des centrales solaires partout en France. Leur maintenance mobilise de nombreuses interventions sur site, qu'il fallait suivre dans un outil unique, du ticket jusqu'au terrain.</dd></div>
-          <div><dt>Besoin</dt><dd>Centraliser tickets, planification et suivi, et donner une vue claire aux équipes métier. Livrer sans casser la production grâce à des tests automatisés, superviser les serveurs, l'API et les jobs de synchronisation des données terrain, être alerté dès qu'un incident survient, et automatiser l'exploitation courante : sauvegardes, purge des logs, contrôles de cohérence.</dd></div>
-          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Intégration continue avec GitHub Actions et Codemagic : compilation, tests Jest et E2E, livraison multi environnements. Tableaux de bord Grafana et alertes sur les serveurs, l'API et les jobs de synchronisation. Automatisation par scripts Bash et Python : sauvegardes, purge des logs, contrôles de cohérence des données terrain. Documentation d'exploitation et runbooks d'incident.</p><p><b class="axe dev">Développement</b> Conception de la GMAO interne (React, Node.js, Express, MySQL) : tickets, planification, tableaux de bord, droits utilisateurs et écrans mobiles de suivi terrain.</p><p><b class="axe agile">Agile</b> Méthodologie Agile Scrum en lien direct avec les équipes métier : recueil et priorisation des besoins, livraisons itératives, revues de code et Git flow.</p></dd></div>
-          <div><dt>Résultat</dt><dd><ul class="wins"><li><b>50 %</b> d'anomalies détectées avant la production</li><li><b>−40 %</b> d'incidents</li><li><b>−60 %</b> de temps de traitement des interventions</li></ul></dd></div>
-        </dl>
-        <ul class="chips"><li>GitHub Actions</li><li>Codemagic</li><li>Grafana</li><li>Bash</li><li>Python</li><li>Jest</li><li>React</li><li>Node.js</li><li>MySQL</li></ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- Formation -->
-  <section id="formation" class="section">
-    <h2><span>Ma</span> formation</h2>
-    <div class="grid">
-      <article class="card c-blue"><span class="date">2022 à 2025</span><h3>Diplôme d'ingénieur informatique</h3><p><b>3iL Ingénieurs, Limoges</b>, école habilitée par la CTI.</p></article>
-      <article class="card c-yellow"><span class="date">2020 à 2022</span><h3>Classe préparatoire MPSI</h3><p><b>IUC, Douala, Cameroun.</b> Anglais professionnel, TOEIC 865.</p></article>
-    </div>
-  </section>
-
-  <!-- 2. Projets -->
-  <section id="projets" class="section">
-    <h2><span>Side</span> projects</h2>
-    <div class="featured">
-      <article class="card big c-blue">
-        <div class="card-head"><span class="emoji-dot">G</span><h3>GoWithMe</h3></div>
-        <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
-        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
-        <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
-        <div class="links"><button type="button" class="btn small" data-apercu="gowithme" data-n="5" data-titre="GoWithMe">Voir un aperçu</button></div>
-      </article>
-      <article class="card big c-teal">
-        <div class="card-head"><span class="emoji-dot">S</span><h3>SplitEase</h3></div>
-        <p>Une application installable (PWA) pour partager les dépenses entre amis, en voyage ou en colocation.</p>
-        <ul class="points"><li>Simplification des dettes par graphe : le moins de remboursements possible</li><li>Authentification, base PostgreSQL et synchronisation en temps réel avec Supabase</li><li>Mode hors ligne, export CSV, partage de groupe par lien</li><li>Mobile first, thème clair ou sombre, accessibilité WCAG AA</li></ul>
-        <ul class="chips"><li>React 18</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>PWA</li></ul>
-        <div class="links"><button type="button" class="btn small" data-apercu="splitease" data-n="6" data-titre="SplitEase">Voir un aperçu</button></div>
-      </article>
-    </div>
-    <h3 class="autres">Autres projets</h3>
-    <div class="grid three">
-      <article class="card c-green">
-        <div class="card-head"><span class="emoji-dot">L</span><h3>Lab DevOps</h3></div>
-        <p>Mon laboratoire personnel : un cluster Kubernetes k3s provisionné avec Terraform et Ansible, des déploiements GitOps avec Helm et Argo CD, et des pipelines GitLab CI/CD. C'est là que je teste avant de mettre en production.</p>
-        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>k3s</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
-      </article>
-      <article class="card c-pink">
-        <div class="card-head"><span class="emoji-dot">Ç</span><h3>Ça joue</h3></div>
-        <p>Vingt-trois jeux de soirée sur un seul téléphone qu'on se passe : Mimes, Time's Up, Undercover, Loup-garou avec meneur vocal, Quiz de 2 250 questions, jeux pour les couples. Gratuit, sans compte, sans pub, utilisable hors ligne.</p>
-        <ul class="chips"><li>JavaScript</li><li>Vite</li><li>PWA</li><li>Capacitor</li></ul>
-        <div class="links"><button type="button" class="btn small" data-apercu="cajoue" data-n="6" data-titre="Ça joue">Voir un aperçu</button></div>
-      </article>
-      <article class="card c-yellow">
-        <div class="card-head"><span class="emoji-dot">D</span><h3>Doodle Video</h3></div>
-        <p>Un pipeline de production vidéo automatisé : moteur d'animation 2D en canvas, voix off synthétisée et alignée mot à mot, rendu headless, contrôles qualité automatiques (zones sûres, plans figés, transcription de la voix) et export multi formats. Un épisode par jour sur TikTok.</p>
-        <ul class="chips"><li>JavaScript</li><li>Python</li><li>Playwright</li><li>FFmpeg</li><li>Whisper</li></ul>
-        <div class="links"><a href="#videos" class="btn small">Voir des rendus</a></div>
-      </article>
-    </div>
-  </section>
-
-  <!-- 4. Compétences -->
-  <section id="competences" class="section">
-    <h2><span>Ce que</span> je sais faire</h2>
-    <div class="skills">
-      <div class="skill s4"><h3>CI/CD</h3><p>GitHub Actions, GitLab CI, Codemagic, Appcircle : build, tests, qualité et déploiement multi environnements.</p></div>
-      <div class="skill s5"><h3>Conteneurs et cloud</h3><p>Docker, Docker Compose, Kubernetes k3s, Helm, Argo CD, AWS (EC2, S3, IAM), Nginx, SSL/TLS, Linux.</p></div>
-      <div class="skill s6"><h3>Infra et supervision</h3><p>Terraform, Ansible, Prometheus, Grafana, alerting, ELK, Bash et Python, runbooks.</p></div>
-      <div class="skill s3"><h3>Back-end</h3><p>Node.js, NestJS, Express, Symfony, API REST, WebSocket, JWT, PostgreSQL, MySQL, Supabase, Stripe.</p></div>
-      <div class="skill s1"><h3>Front</h3><p>React, TypeScript, JavaScript, Redux, Tailwind, applications installables hors ligne.</p></div>
-      <div class="skill s2"><h3>Mobile et qualité</h3><p>React Native, Expo, publication sur les stores, tests Jest et E2E, revues de code.</p></div>
-      <div class="skill s7"><h3>Méthode</h3><p>Agile Scrum, priorisation du besoin avec le métier, livraisons itératives, Git flow, documentation, anglais professionnel (TOEIC 865).</p></div>
-    </div>
-  </section>
-
-  <!-- 3. Vidéos -->
-  <section id="videos" class="section dark">
-    <h2><span>Doodle Video</span> en images</h2>
-    <p class="sub">Trois rendus produits par mon pipeline vidéo automatisé, du script au mp4 publié, sans montage à la main.</p>
-    <div class="videos">
-      <figure><video src="assets/videos/ep59.mp4" poster="assets/videos/ep59.jpg" controls preload="none" playsinline></video><figcaption>Vendredi 13 <small>comédie</small></figcaption></figure>
-      <figure><video src="assets/videos/ep60.mp4" poster="assets/videos/ep60.jpg" controls preload="none" playsinline></video><figcaption>Le 19 novembre <small>comédie</small></figcaption></figure>
-      <figure><video src="assets/videos/ep58.mp4" poster="assets/videos/ep58.jpg" controls preload="none" playsinline></video><figcaption>Tu l'as vu ? <small>énigme</small></figcaption></figure>
-    </div>
-      </section>
-
-  <!-- 5. Contact -->
-  <section id="contact" class="section contact">
-    <h2><span>On</span> discute ?</h2>
-    <p class="sub">Un poste, une mission, un projet d'application ou d'industrialisation : écris-moi. Mobilité France entière.</p>
-    <div class="cta center">
-      <a href="mailto:leolinsanga@gmail.com" class="btn">leolinsanga@gmail.com</a>
-      <a href="https://github.com/adiel-sml" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/adiel-sanga" class="btn ghost" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="colonne">
+      <h2 class="petit-titre">Expérience</h2>
+      <ol class="liste">
+        <li><a href="experiences#dooke"><span class="pastille c-yellow">DC</span><span class="txt"><b>Dooke Consulting</b><small>Ingénieur logiciel et DevOps</small></span><span class="quand">Depuis mai 2026</span></a></li>
+        <li><a href="experiences#optimum-tracker"><span class="pastille c-teal">OT</span><span class="txt"><b>Optimum Tracker</b><small>Ingénieur DevOps et fullstack</small></span><span class="quand">sept. 2025 à avr. 2026</span></a></li>
+        <li><a href="experiences#optimum-tracker-alternance"><span class="pastille c-pink">OT</span><span class="txt"><b>Optimum Tracker</b><small>Ingénieur DevOps et fullstack, stage puis alternance</small></span><span class="quand">avr. 2024 à sept. 2025</span></a></li>
+        <li><a href="a-propos#formation"><span class="pastille c-blue">3iL</span><span class="txt"><b>3iL Ingénieurs</b><small>Diplôme d'ingénieur informatique (CTI)</small></span><span class="quand">2022 à 2025</span></a></li>
+      </ol>
+      <a class="voir" href="experiences">Voir tout le parcours →</a>
     </div>
   </section>
 </main>
+<footer class="pied">
+  <div class="pied-cols">
+    <div><h4>Explorer</h4><a href="/">Accueil</a><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets">Projets</a></div>
+    <div><h4>Me retrouver</h4><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">E-mail</a></div>
+  </div>
+  <p>© <span id="annee">2026</span> Adiel Sanga · Fait main, avec beaucoup de traits noirs</p>
+</footer>
 
-<footer>© <span id="annee">2026</span> Adiel Sanga · Fait main, avec beaucoup de traits noirs</footer>
-
-<dialog id="apercu" aria-labelledby="apercu-titre">
-  <div class="apercu-head"><h3 id="apercu-titre">Aperçu</h3><button type="button" class="btn small ghost" data-fermer aria-label="Fermer l'aperçu">Fermer</button></div>
-  <div class="apercu-ecrans"></div>
-  <p class="apercu-aide">Fais défiler pour voir les écrans.</p>
-</dialog>
-<script>
-(() => {
-  const d = document.getElementById('apercu'), zone = d.querySelector('.apercu-ecrans'), titre = d.querySelector('#apercu-titre');
-  document.querySelectorAll('[data-apercu]').forEach(b => b.addEventListener('click', () => {
-    const app = b.dataset.apercu, n = +b.dataset.n;
-    titre.textContent = 'Aperçu de ' + b.dataset.titre;
-    zone.innerHTML = Array.from({ length: n }, (_, i) => `<figure class="telephone"><img src="assets/apercus/${app}-${i + 1}.webp" alt="${b.dataset.titre}, écran ${i + 1}" loading="lazy" width="540" height="1169"></figure>`).join('');
-    zone.scrollLeft = 0; d.showModal();
-  }));
-  d.querySelector('[data-fermer]').addEventListener('click', () => d.close());
-  d.addEventListener('click', e => { if (e.target === d) d.close(); });
-})();
-</script>
 <script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
 </body>
 </html>
