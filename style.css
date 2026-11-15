@@ -179,3 +179,9 @@ button.btn { cursor: pointer; font-family: "Titan One", sans-serif; }
 .telephone img { width: 100%; height: auto; border-radius: 26px; display: block; }
 .apercu-aide { margin: 0; text-align: center; font-weight: 700; opacity: .8; font-size: 15px; }
 @media (max-width: 560px) { .telephone { width: 72vw; } #apercu { padding: 14px; } }
+/* solution : DevOps d'abord, sur toute la largeur */
+.csbr > .sol { grid-column: 1 / -1; order: 3; }
+.csbr > div:nth-child(4) { order: 4; grid-column: 1 / -1; }
+.sol dd p { margin: 6px 0; }
+.axe { display: inline-block; font: 400 14px "Titan One"; background: var(--ink); color: var(--yellow); border-radius: 8px; padding: 1px 8px; margin-right: 6px; letter-spacing: .5px; }
+.axe.dev { color: var(--teal); }
