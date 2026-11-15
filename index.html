@@ -113,14 +113,14 @@
         <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
         <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
         <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
-        <div class="links"><a href="https://github.com/GoWithMe-App/gowithme" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><button type="button" class="btn small" data-apercu="gowithme" data-n="5" data-titre="GoWithMe">Voir un aperçu</button></div>
       </article>
       <article class="card big c-teal">
         <div class="card-head"><span class="emoji-dot">S</span><h3>SplitEase</h3></div>
         <p>Une application installable (PWA) pour partager les dépenses entre amis, en voyage ou en colocation.</p>
         <ul class="points"><li>Simplification des dettes par graphe : le moins de remboursements possible</li><li>Authentification, base PostgreSQL et synchronisation en temps réel avec Supabase</li><li>Mode hors ligne, export CSV, partage de groupe par lien</li><li>Mobile first, thème clair ou sombre, accessibilité WCAG AA</li></ul>
         <ul class="chips"><li>React 18</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>PWA</li></ul>
-        <div class="links"><a href="https://github.com/adiel-sml/SplitEaseV2" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><button type="button" class="btn small" data-apercu="splitease" data-n="6" data-titre="SplitEase">Voir un aperçu</button></div>
       </article>
     </div>
     <h3 class="autres">Autres projets</h3>
@@ -134,7 +134,7 @@
         <div class="card-head"><span class="emoji-dot">Ç</span><h3>Ça joue</h3></div>
         <p>Vingt-trois jeux de soirée sur un seul téléphone qu'on se passe : Mimes, Time's Up, Undercover, Loup-garou avec meneur vocal, Quiz de 2 250 questions, jeux pour les couples. Gratuit, sans compte, sans pub, utilisable hors ligne.</p>
         <ul class="chips"><li>JavaScript</li><li>Vite</li><li>PWA</li><li>Capacitor</li></ul>
-        <div class="links"><a href="https://github.com/adiel-sml/ca-joue" class="btn small ghost" target="_blank" rel="noopener">Code</a></div>
+        <div class="links"><button type="button" class="btn small" data-apercu="cajoue" data-n="6" data-titre="Ça joue">Voir un aperçu</button></div>
       </article>
       <article class="card c-yellow">
         <div class="card-head"><span class="emoji-dot">D</span><h3>Doodle Video</h3></div>
@@ -182,6 +182,25 @@
 </main>
 
 <footer>© <span id="annee">2026</span> Adiel Sanga · Fait main, avec beaucoup de traits noirs</footer>
+
+<dialog id="apercu" aria-labelledby="apercu-titre">
+  <div class="apercu-head"><h3 id="apercu-titre">Aperçu</h3><button type="button" class="btn small ghost" data-fermer aria-label="Fermer l'aperçu">Fermer</button></div>
+  <div class="apercu-ecrans"></div>
+  <p class="apercu-aide">Fais défiler pour voir les écrans.</p>
+</dialog>
+<script>
+(() => {
+  const d = document.getElementById('apercu'), zone = d.querySelector('.apercu-ecrans'), titre = d.querySelector('#apercu-titre');
+  document.querySelectorAll('[data-apercu]').forEach(b => b.addEventListener('click', () => {
+    const app = b.dataset.apercu, n = +b.dataset.n;
+    titre.textContent = 'Aperçu de ' + b.dataset.titre;
+    zone.innerHTML = Array.from({ length: n }, (_, i) => `<figure class="telephone"><img src="assets/apercus/${app}-${i + 1}.webp" alt="${b.dataset.titre}, écran ${i + 1}" loading="lazy" width="540" height="1169"></figure>`).join('');
+    zone.scrollLeft = 0; d.showModal();
+  }));
+  d.querySelector('[data-fermer]').addEventListener('click', () => d.close());
+  d.addEventListener('click', e => { if (e.target === d) d.close(); });
+})();
+</script>
 <script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
 </body>
 </html>
