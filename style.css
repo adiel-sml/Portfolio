@@ -185,3 +185,7 @@ button.btn { cursor: pointer; font-family: "Titan One", sans-serif; }
 .sol dd p { margin: 6px 0; }
 .axe { display: inline-block; font: 400 14px "Titan One"; background: var(--ink); color: var(--yellow); border-radius: 8px; padding: 1px 8px; margin-right: 6px; letter-spacing: .5px; }
 .axe.dev { color: var(--teal); }
+.axe.agile { color: var(--pink); }
+.s7 { background: #7ddc6f; }
+.skills .skill.s7 { grid-column: 1 / -1; }
+@media (max-width: 900px) { .skills .skill.s7 { grid-column: auto; } }
