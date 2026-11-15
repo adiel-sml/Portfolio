@@ -234,3 +234,26 @@ button.btn { cursor: pointer; font-family: "Titan One", sans-serif; }
 .salut span { color: var(--red); }
 ol.liste a { grid-template-columns: auto 1fr; }
 ol.liste .quand { grid-column: 2; justify-self: start; text-align: left; margin-top: -8px; }
+/* ===== accueil : listes épurées ===== */
+.duo.epure { gap: 56px; grid-template-columns: 1.1fr .9fr; padding-top: 40px; }
+.epure .colonne { background: none; border: 0; box-shadow: none; padding: 0; }
+.epure .petit-titre { font: 800 13px "Baloo 2"; text-transform: uppercase; letter-spacing: 2px; color: rgba(27,20,34,.6); margin: 0 0 6px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.epure .liste li + li { border-top: 1px solid rgba(27,20,34,.12); }
+.epure .liste a { grid-template-columns: 40px 1fr auto; gap: 16px; padding: 16px 8px; border-radius: 10px; align-items: start; }
+.epure .liste a:hover, .epure .liste a:focus-visible { background: rgba(255,255,255,.75); transform: none; }
+.epure .pastille { width: 40px; height: 40px; border: 2px solid var(--ink); box-shadow: none; font-size: 14px; margin-top: 2px; }
+.epure .liste b { font: 800 18px "Baloo 2"; line-height: 1.2; }
+.epure .liste a:hover b { color: var(--red); }
+.epure .liste small { font-weight: 600; font-size: 14px; opacity: .6; margin-top: 1px; }
+.epure .liste em { font-size: 15px; line-height: 1.45; margin-top: 4px; opacity: .85; }
+.epure .badge { border: 0; background: none; padding: 0; font-size: 13px; font-weight: 700; opacity: .55; margin-top: 4px; }
+.epure ol.liste a { grid-template-columns: 40px 1fr auto; }
+.epure ol.liste .quand { grid-column: auto; justify-self: end; text-align: right; margin-top: 4px; font-weight: 700; opacity: .55; white-space: nowrap; }
+.epure .actions { margin-top: 8px; }
+.epure .voir { font: 800 16px "Baloo 2"; border-bottom: 2px solid var(--ink); }
+.cv { display: grid; gap: 8px; margin-top: 18px; }
+.cv a { display: flex; justify-content: center; align-items: center; gap: 8px; text-decoration: none; font-weight: 800; padding: 10px 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); transition: background .15s; }
+.cv a::before { content: "↓"; font-weight: 800; }
+.cv a:hover { background: var(--yellow); }
+@media (max-width: 860px) { .duo.epure { grid-template-columns: 1fr; gap: 40px; } }
+@media (max-width: 560px) { .epure .liste a, .epure ol.liste a { grid-template-columns: 40px 1fr; } .epure .badge, .epure ol.liste .quand { grid-column: 2; justify-self: start; text-align: left; margin-top: -6px; } }
