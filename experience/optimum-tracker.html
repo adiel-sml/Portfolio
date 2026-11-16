@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ingénieur DevOps et fullstack chez Optimum Tracker · Adiel Sanga</title>
-<meta name="description" content="Ingénieur DevOps et fullstack chez Optimum Tracker : contexte, besoin, solution et résultat.">
-<meta property="og:title" content="Ingénieur DevOps et fullstack chez Optimum Tracker · Adiel Sanga">
+<title>Ingénieur DevOps chez Optimum Tracker · Adiel Sanga</title>
+<meta name="description" content="Ingénieur DevOps chez Optimum Tracker : contexte, besoin, solution et résultat.">
+<meta property="og:title" content="Ingénieur DevOps chez Optimum Tracker · Adiel Sanga">
 <meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
 <meta property="og:image" content="assets/adiel-sanga.jpg">
 <script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
@@ -24,14 +24,14 @@
   <section class="section detail">
     <a class="retour" href="/">← Retour à l'accueil</a>
     <article class="xp seul t-teal">
-        <header><span class="date">09/2025 à 04/2026</span><h3>Ingénieur DevOps et fullstack <em>Optimum Tracker · Meyreuil</em></h3></header>
+        <header><span class="date">09/2025 à 04/2026</span><h3>Ingénieur DevOps <em>Optimum Tracker · Meyreuil</em></h3></header>
         <dl class="csbr">
-          <div><dt>Contexte</dt><dd>Optimum Tracker, leader français du tracker solaire, conçoit des structures qui orientent les panneaux selon la course du soleil : O-Track pour les grandes centrales, Agri-Track pour l'agrivoltaïsme. Leur pilotage logiciel (Opti-Sky Control) produit jusqu'à 25 % d'énergie en plus qu'une installation fixe. Sur le terrain, les équipes pilotent et supervisent les centrales avec les applications mobiles TCU Control et AgriTrack.</dd></div>
-          <div><dt>Besoin</dt><dd>Faire évoluer ces applications et garantir la connexion sur le terrain. Automatiser des builds mobiles et une gestion des certificats encore fastidieuses, fiabiliser la publication sur les stores, stabiliser l'infrastructure de production, surveiller la disponibilité de la GMAO et traiter rapidement les incidents remontés par les équipes.</dd></div>
-          <div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Chaînes de build mobiles Appcircle et Codemagic : build, signature, gestion des certificats, distribution multi environnements et publication sur les stores. Services conteneurisés avec Docker Compose sur Linux, Nginx en reverse proxy avec SSL, secrets par environnement. Supervision des déploiements de la GMAO, gestion des incidents de disponibilité et support aux développeurs sur les builds.</p><p><b class="axe dev">Développement</b> Nouvelles fonctionnalités et correctifs des applications React Native, API Node.js pour le web et le mobile.</p><p><b class="axe agile">Agile</b> Équipe en Agile Scrum : besoins priorisés avec les équipes terrain, livraisons itératives, revues de code et Git flow.</p></dd></div>
-          <div><dt>Résultat</dt><dd>Des déploiements reproductibles, des environnements de production stabilisés, des livraisons mobiles continues et une API qui répond en moins de 500 ms au 95e centile.</dd></div>
-        </dl>
-        <ul class="chips"><li>Codemagic</li><li>Appcircle</li><li>Docker Compose</li><li>Nginx</li><li>SSL/TLS</li><li>React Native</li><li>Node.js</li></ul>
+<div><dt>Contexte</dt><dd>Optimum Tracker, leader français du tracker solaire, conçoit des structures qui orientent les panneaux selon la course du soleil : O-Track pour les grandes centrales, Agri-Track pour l'agrivoltaïsme. Sur le terrain, les équipes pilotent et supervisent les centrales agrivoltaïques avec les applications mobiles TCU Control et AgriTrack. Dans la suite de mon alternance, j'ai repris la livraison et le RUN de la plateforme.</dd></div>
+<div><dt>Besoin</dt><dd>Livrer les applications mobiles en continu sur les stores, mettre à jour des serveurs vieillissants sans interrompre la supervision des centrales, et réduire les incidents en production.</dd></div>
+<div class="sol"><dt>Solution</dt><dd><p><b class="axe">DevOps</b> Déploiement continu sur l'App Store et Google Play avec Appcircle et Codemagic, gestion des certificats et des clés de signature. Montées de version par playbooks Ansible : Ubuntu 20.04 vers 22.04 et Node.js 16 vers 20, sans interruption de service. MCO : diagnostic (journalctl, systemctl, scripts Bash), recherche de la cause racine et support aux équipes terrain.</p><p><b class="axe dev">Développement</b> Nouvelles fonctionnalités et correctifs des applications React Native, API Node.js pour le web et le mobile.</p><p><b class="axe agile">Agile</b> Équipe en Agile Scrum : besoins priorisés avec les équipes terrain, livraisons itératives, revues de code et Git flow.</p></dd></div>
+<div><dt>Résultat</dt><dd><ul class="wins"><li><b>−40 %</b> d'incidents</li><li>Montées de version <b>sans interruption</b></li><li>Livraisons <b>continues</b> sur les stores</li></ul></dd></div>
+</dl>
+        <ul class="chips"><li>Appcircle</li><li>Codemagic</li><li>Ansible</li><li>Ubuntu</li><li>Bash</li><li>App Store Connect</li><li>Play Console</li><li>React Native</li><li>Node.js</li></ul>
       </article>
     <nav class="pager"><a class="prec" href="/experience/dooke">← Expérience plus récente</a><a class="suiv" href="/experience/optimum-tracker-alternance">Expérience précédente →</a></nav>
   </section>

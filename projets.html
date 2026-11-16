@@ -28,7 +28,7 @@
       <article id="gowithme" class="card big c-blue">
         <div class="card-head"><span class="emoji-dot">G</span><h3>GoWithMe</h3></div>
         <p>Une marketplace de colivraison entre l'Afrique et l'Europe : les voyageurs qui ont des kilos libres dans leur valise rencontrent ceux qui veulent envoyer un colis.</p>
-        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité (KYC), codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD avec GitHub Actions</li></ul>
+        <ul class="points"><li>Application mobile React Native et Expo, monorepo partagé avec l'API et le back-office</li><li>API NestJS, PostgreSQL et Redis</li><li>Paiements séquestrés avec Stripe (Europe) et Flutterwave (Afrique)</li><li>Vérification d'identité avec Didit, données de vols AeroDataBox, codes de remise et de livraison, suivi en temps réel</li><li>Environnements Docker Compose et CI/CD GitHub Actions : lint, tests, build</li></ul>
         <ul class="chips"><li>React Native</li><li>Expo</li><li>NestJS</li><li>PostgreSQL</li><li>Redis</li><li>Stripe</li><li>Docker</li><li>GitHub Actions</li></ul>
         <div class="links"><button type="button" class="btn small" data-apercu="gowithme" data-n="5" data-titre="GoWithMe">Voir un aperçu</button></div>
       <a class="detail-lien" href="/projet/gowithme">Voir la page →</a></article>
@@ -44,8 +44,8 @@
     <div class="grid three">
       <article id="lab-devops" class="card c-green">
         <div class="card-head"><span class="emoji-dot">L</span><h3>Lab DevOps</h3></div>
-        <p>Mon laboratoire personnel : un cluster Kubernetes k3s provisionné avec Terraform et Ansible, des déploiements GitOps avec Helm et Argo CD, et des pipelines GitLab CI/CD. C'est là que je teste avant de mettre en production.</p>
-        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>k3s</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
+        <p>Mon laboratoire personnel : toute la chaîne IaC, Kubernetes et GitOps sur des VM locales. Les VM sont provisionnées en Terraform et configurées par des playbooks Ansible, les applications tournent sur un cluster kind et sont packagées en charts Helm, Argo CD synchronise le cluster sur le dépôt Git, et les pipelines tournent sur GitLab CI. C'est là que je teste avant de mettre en production.</p>
+        <ul class="chips"><li>Terraform</li><li>Ansible</li><li>kind</li><li>Helm</li><li>Argo CD</li><li>GitLab CI</li></ul>
       <a class="detail-lien" href="/projet/lab-devops">Voir la page →</a></article>
       <article id="ca-joue" class="card c-pink">
         <div class="card-head"><span class="emoji-dot">Ç</span><h3>Ça joue</h3></div>
