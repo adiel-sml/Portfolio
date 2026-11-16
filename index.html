@@ -8,38 +8,28 @@
 <meta property="og:title" content="Adiel Sanga · Ingénieur logiciel et DevOps">
 <meta property="og:description" content="Applications web et mobiles, API, CI/CD, conteneurs, cloud et supervision.">
 <meta property="og:image" content="assets/adiel-sanga.jpg">
+<script>try{const t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="/">A<span>S</span></a>
-  <nav><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets">Projets</a><a href="mailto:leolinsanga@gmail.com" class="btn small">Me contacter</a></nav>
+  <a class="logo" href="/">Adiel Sanga</a>
+  <nav><a href="a-propos">À propos</a><a href="experiences">Expériences</a><a href="projets">Projets</a><button type="button" class="theme" aria-label="Changer de thème"><svg class="soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></nav>
 </header>
 <main>
   <section class="hero-lite">
     <picture><source srcset="assets/adiel-sanga.webp" type="image/webp"><img class="avatar" src="assets/adiel-sanga.jpg" alt="Portrait d'Adiel Sanga" width="600" height="600"></picture>
-    <h1 class="salut">Salut, je suis <span>Adiel Sanga</span>,<br>ingénieur logiciel et DevOps.</h1>
+    <h1 class="salut">Adiel Sanga<br><span>Ingénieur logiciel et DevOps.</span></h1>
     <p class="intro">Basé à Paris, mobile dans toute la France. Je conçois des applications web et mobiles de bout en bout, et j'industrialise leur livraison : CI/CD, conteneurs, cloud et supervision, en <a href="a-propos">méthodologie Agile</a>.</p>
     <ul class="chiffres"><li><b>3 ans</b> d'expérience</li><li><b>Bac+5</b> ingénieur CTI</li><li><b>−40 %</b> d'incidents en production</li></ul>
     <p class="reseaux"><a href="assets/cv/CV_Adiel_Sanga_DevOps.pdf" download>CV</a><a href="https://github.com/adiel-sml" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/adiel-sanga" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:leolinsanga@gmail.com">leolinsanga@gmail.com</a></p>
   </section>
 
   <section class="duo epure">
-    <div class="colonne">
-      <h2 class="petit-titre">Projets à la une</h2>
-      <ul class="liste">
-        <li><a href="/projet/gowithme"><span class="pastille c-blue">G</span><span class="txt"><b>GoWithMe</b><small>Mobile · NestJS · Docker</small><em>Marketplace de colivraison entre l'Afrique et l'Europe, paiements séquestrés et KYC.</em></span><span class="badge">Side project</span></a></li>
-        <li><a href="/projet/splitease"><span class="pastille c-teal">S</span><span class="txt"><b>SplitEase</b><small>PWA · React · Supabase</small><em>Les comptes entre amis, avec simplification des dettes par graphe.</em></span><span class="badge">Side project</span></a></li>
-        <li><a href="/projet/lab-devops"><span class="pastille c-green">L</span><span class="txt"><b>Lab DevOps</b><small>k3s · Terraform · Argo CD</small><em>Cluster Kubernetes provisionné en code, déploiements GitOps.</em></span><span class="badge">Infra</span></a></li>
-        <li><a href="/projet/ca-joue"><span class="pastille c-pink">Ç</span><span class="txt"><b>Ça joue</b><small>PWA · Vite · Capacitor</small><em>Vingt-trois jeux de soirée sur un seul téléphone, hors ligne.</em></span><span class="badge">Gratuit</span></a></li>
-        <li><a href="/projet/doodle-video"><span class="pastille c-yellow">D</span><span class="txt"><b>Doodle Video</b><small>Claude Code · Python · FFmpeg</small><em>Plugin Claude Code qui produit tout seul des vidéos animées.</em></span><span class="badge">Automatisation</span></a></li>
-      </ul>
-      <a class="voir" href="projets">Voir tous les projets →</a>
-    </div>
     <div class="colonne">
       <h2 class="petit-titre">Expérience</h2>
       <ol class="liste">
@@ -51,7 +41,18 @@
       <div class="actions"><a class="voir" href="experiences">Voir tout le parcours →</a></div>
       <div class="cv"><a href="assets/cv/CV_Adiel_Sanga_DevOps.pdf" download>Télécharger le CV</a></div>
     </div>
-  </section>
+<div class="colonne">
+      <h2 class="petit-titre">Projets à la une</h2>
+      <ul class="liste">
+        <li><a href="/projet/gowithme"><span class="pastille c-blue">G</span><span class="txt"><b>GoWithMe</b><small>Mobile · NestJS · Docker</small><em>Marketplace de colivraison entre l'Afrique et l'Europe, paiements séquestrés et KYC.</em></span><span class="badge">Side project</span></a></li>
+        <li><a href="/projet/splitease"><span class="pastille c-teal">S</span><span class="txt"><b>SplitEase</b><small>PWA · React · Supabase</small><em>Les comptes entre amis, avec simplification des dettes par graphe.</em></span><span class="badge">Side project</span></a></li>
+        <li><a href="/projet/lab-devops"><span class="pastille c-green">L</span><span class="txt"><b>Lab DevOps</b><small>k3s · Terraform · Argo CD</small><em>Cluster Kubernetes provisionné en code, déploiements GitOps.</em></span><span class="badge">Infra</span></a></li>
+        <li><a href="/projet/ca-joue"><span class="pastille c-pink">Ç</span><span class="txt"><b>Ça joue</b><small>PWA · Vite · Capacitor</small><em>Vingt-trois jeux de soirée sur un seul téléphone, hors ligne.</em></span><span class="badge">Gratuit</span></a></li>
+        <li><a href="/projet/doodle-video"><span class="pastille c-yellow">D</span><span class="txt"><b>Doodle Video</b><small>Claude Code · Python · FFmpeg</small><em>Plugin Claude Code qui produit tout seul des vidéos animées.</em></span><span class="badge">Automatisation</span></a></li>
+      </ul>
+      <a class="voir" href="projets">Voir tous les projets →</a>
+    </div>
+</section>
 </main>
 <footer class="pied">
   <div class="pied-cols">
@@ -62,5 +63,9 @@
 </footer>
 
 <script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
+<script>document.querySelector('.theme').addEventListener('click', () => {
+  const sombre = matchMedia('(prefers-color-scheme: dark)').matches, actuel = document.documentElement.dataset.theme || (sombre ? 'dark' : 'light');
+  const t = actuel === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = t; try { localStorage.setItem('theme', t); } catch (e) {}
+});</script>
 </body>
 </html>
